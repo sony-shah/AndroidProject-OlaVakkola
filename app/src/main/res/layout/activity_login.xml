@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sonyshah.olavakkola.login"
+    android:background="@drawable/realbc">
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@drawable/iconwhite" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:text="@string/Textview"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/holo_orange_light"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/editText1"
+        android:layout_toStartOf="@+id/editText1"
+        android:background="#ff8800"
+        app:srcCompat="@drawable/ic_person_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/editText2"
+        android:layout_toStartOf="@+id/editText1"
+        android:background="@android:color/holo_orange_dark"
+        app:srcCompat="@drawable/ic_lock_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_above="@+id/imageView16"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="33dp"
+        android:alpha="0.7"
+        android:background="#ffffff"
+        android:ems="12"
+        android:hint="@string/editText1"
+        android:inputType="textEmailAddress"
+        android:paddingStart="5dp"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textColorHint="#000000"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imageView16"
+        android:alpha="0.7"
+        android:background="#ffffff"
+        android:ems="12"
+        android:hint="@string/editText2"
+        android:inputType="textPassword"
+        android:paddingStart="5dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="#000000"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="12dp"
+        android:background="#ff8800"
+        android:onClick="regis"
+        android:text="@string/button2"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="#ff8800"
+        android:onClick="home"
+        android:text="@string/button1"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>
